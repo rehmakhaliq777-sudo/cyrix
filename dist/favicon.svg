@@ -1,8 +1,0 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="180" height="180" rx="36" fill="#0F172A"/>
-  <!-- Shield shape -->
-  <path d="M90 28 L148 52 L148 96 C148 126 122 148 90 158 C58 148 32 126 32 96 L32 52 Z" fill="#06B6D4" opacity="0.15"/>
-  <path d="M90 36 L140 57 L140 96 C140 122 118 142 90 151 C62 142 40 122 40 96 L40 57 Z" fill="none" stroke="#06B6D4" stroke-width="4"/>
-  <!-- CX lettermark -->
-  <text x="90" y="110" font-family="monospace, sans-serif" font-size="42" font-weight="700" fill="#06B6D4" text-anchor="middle" letter-spacing="-2">CX</text>
-</svg>
