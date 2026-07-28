@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYRIX | Encryption & Decryption</title>
+  <meta name="description" content="Learn and experiment with classical and modern encryption algorithms.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" crossorigin href="/assets/style-DUIa778m.css">
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-shield"></div>
+    <div class="loader-text">CYRIX</div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        CYRIX
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html" class="active">Encryption</a>
+        
+      </div>
+      <div class="controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="enc-hero">
+      <div class="tk-hero-grid" aria-hidden="true"></div>
+      <div class="enc-hero-content">
+        <div class="tk-hero-badge">10 Algorithms</div>
+        <h1>Encryption &amp; Decryption</h1>
+        <p>Learn how cryptographic algorithms work by experimenting with them hands-on.</p>
+      </div>
+    </section>
+
+    <!-- Main workspace -->
+    <section class="section-container">
+      <div class="enc-workspace">
+
+        <!-- LEFT — controls -->
+        <div class="enc-controls">
+
+          <!-- Algorithm picker -->
+          <div class="enc-field">
+            <label class="enc-label" for="enc-algo">Algorithm</label>
+            <select id="enc-algo" class="enc-select">
+              <optgroup label="Classical Ciphers">
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+                <option value="railfence">Rail Fence Cipher</option>
+                <option value="playfair">Playfair Cipher</option>
+              </optgroup>
+              <optgroup label="Modern Algorithms">
+                <option value="aes">AES (Web Crypto)</option>
+                <option value="des">DES (Educational)</option>
+                <option value="tripledes">Triple DES (Educational)</option>
+                <option value="rsa">RSA (Educational)</option>
+                <option value="blowfish">Blowfish (Educational)</option>
+                <option value="twofish">Twofish (Educational)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- Key input (label/type change based on algo) -->
+          <div class="enc-field" id="enc-key-wrap">
+            <label class="enc-label" for="enc-key" id="enc-key-label">Shift Amount (1–25)</label>
+            <input type="number" id="enc-key" class="enc-input" placeholder="e.g. 13" min="1" max="25" value="13" autocomplete="off">
+            <div class="enc-passphrase-hint" id="enc-passphrase-hint" style="display:none;">
+              💡 Use the <strong>same passphrase</strong> during decryption that was used for encryption.
+            </div>
+          </div>
+
+          <!-- Input textarea -->
+          <div class="enc-field">
+            <label class="enc-label" for="enc-input">Input Text</label>
+            <textarea id="enc-input" class="enc-textarea" rows="6" placeholder="Type or paste your text here…"></textarea>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="enc-btn-row">
+            <button class="btn btn-primary" id="enc-encrypt-btn">&#128274; Encrypt</button>
+            <button class="btn btn-outline" id="enc-decrypt-btn">&#128275; Decrypt</button>
+            <button class="btn btn-outline" id="enc-clear-btn">&#215; Clear</button>
+          </div>
+
+          <!-- Output textarea -->
+          <div class="enc-field">
+            <label class="enc-label" for="enc-output">
+              Output Text
+              <button class="enc-copy-btn" id="enc-copy-btn" title="Copy output">&#128203; Copy</button>
+            </label>
+            <textarea id="enc-output" class="enc-textarea enc-output-field" rows="6" placeholder="Result will appear here…" readonly></textarea>
+          </div>
+
+          <!-- Status message -->
+          <div id="enc-status" class="enc-status" style="display:none;"></div>
+
+        </div>
+
+        <!-- RIGHT — algorithm info card -->
+        <div class="enc-info-panel" id="enc-info-panel">
+          <!-- Rendered by encryption.js -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo-icon"></div>
+        CYRIX
+      </div>
+      <p>Empowering Digital Security Through Awareness</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <p class="footer-copy">© 2026 CYRIX.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="/js/progress.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/encryption.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

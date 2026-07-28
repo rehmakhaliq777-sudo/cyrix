@@ -1,0 +1,27 @@
+{
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --registry=https://registry.npmjs.org/",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/password",   "destination": "/password.html" },
+    { "source": "/phishing",   "destination": "/phishing.html" },
+    { "source": "/malware",    "destination": "/malware.html" },
+    { "source": "/quiz",       "destination": "/quiz.html" },
+    { "source": "/toolkit",    "destination": "/toolkit.html" },
+    { "source": "/profile",    "destination": "/profile.html" },
+    { "source": "/encryption", "destination": "/encryption.html" },
+    { "source": "/contact",    "destination": "/contact.html" }
+  ],
+  "headers": [
+    {
+      "source": "/js/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

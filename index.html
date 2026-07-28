@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYRIX | Home</title>
+  <meta name="description" content="CYRIX is a cybersecurity awareness platform for students.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-shield"></div>
+    <div class="loader-text">CYRIX</div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        CYRIX
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <div class="controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-anim"></div>
+      <div class="hero-content">
+        <div class="hero-brand-tag">Empowering Digital Security Through Awareness</div>
+        <h1>Stay Safe Online</h1>
+        <p>Learn how to protect yourself from hackers, scams, malware, and phishing attacks.</p>
+        <div class="btn-group">
+          <button class="btn btn-hero-auth" id="hero-auth-btn">Sign Up / Login</button>
+          <a href="/password.html" class="btn btn-primary">Learn More</a>
+          <a href="/quiz.html" class="btn btn-outline">Take the Quiz</a>
+        </div>
+        <p class="hero-welcome" id="hero-welcome" style="display:none;"></p>
+        <div style="margin-top: 3rem; font-size: 2rem;">↓</div>
+      </div>
+    </section>
+
+    <section class="section-container fade-in-section">
+      <h2 class="section-title">What You'll Learn</h2>
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-icon">⌗</div>
+          <h3>Password Security</h3>
+          <p>Create unbreakable passwords and keep your accounts safe.</p>
+          <a href="/password.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚠</div>
+          <h3>Phishing Awareness</h3>
+          <p>Spot fake emails and websites before they steal your data.</p>
+          <a href="/phishing.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">⎈</div>
+          <h3>Malware Protection</h3>
+          <p>Understand viruses, worms, ransomware, and how to stop them.</p>
+          <a href="/malware.html" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">?</div>
+          <h3>Cyber Quiz</h3>
+          <p>Test your cybersecurity knowledge with our 10-question quiz.</p>
+          <a href="/quiz.html" class="btn btn-primary">Take Quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container fade-in-section">
+      <h2 class="section-title">Why Cybersecurity Matters</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">★</div>
+          <h3>Protect Personal Data</h3>
+          <p>Your photos, messages, and personal info deserve protection.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚿</div>
+          <h3>Prevent Hacking</h3>
+          <p>Strong passwords and safe habits keep attackers out.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👁</div>
+          <h3>Safe Social Media</h3>
+          <p>Think before you post. Privacy settings matter.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">$</div>
+          <h3>Secure Online Shopping</h3>
+          <p>Know how to spot safe websites before buying.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo-icon"></div>
+        CYRIX
+      </div>
+      <p>Empowering Digital Security Through Awareness</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <p class="footer-copy">© 2026 CYRIX.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="/js/progress.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

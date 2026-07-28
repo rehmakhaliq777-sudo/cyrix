@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYRIX | Contact</title>
+  <meta name="description" content="Contact the CYRIX team.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-shield"></div>
+    <div class="loader-text">CYRIX</div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        CYRIX
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/contact.html" class="active">Contact</a>
+      </div>
+      <div class="controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <h1>Contact Us</h1>
+      <p>Have questions about cybersecurity? Reach out to our team.</p>
+    </section>
+
+    <section class="section-container fade-in-section">
+      <div class="contact-container">
+        
+        <div class="contact-form-card">
+          <div id="success-msg">
+            <div class="icon">✓</div>
+            <h3>Message sent successfully!</h3>
+            <p>Thank you for reaching out.</p>
+          </div>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+              <div class="error-msg" id="err-name">Name is required.</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+              <div class="error-msg" id="err-email">Please enter a valid email address.</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <div class="error-msg" id="err-subject">Subject is required.</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <div class="error-msg" id="err-message">Message must be at least 10 characters long.</div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <div class="school-info">
+          <div class="card">
+            <h3>Project Info</h3>
+            <p>CYRIX is a cybersecurity awareness platform designed to help students learn how to protect themselves online. Built with HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="card">
+            <h3>Project Team</h3>
+            <p>This project was developed by the Cyber Ninjas Team as part of their ICT / Computer Science coursework. Special thanks to our teacher advisor.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo-icon"></div>
+        CYRIX
+      </div>
+      <p>Empowering Digital Security Through Awareness</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 CYRIX.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="/js/main.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      let isValid = true;
+      
+      const name = document.getElementById('name').value.trim();
+      if (!name) { document.getElementById('err-name').style.display = 'block'; isValid = false; }
+      else { document.getElementById('err-name').style.display = 'none'; }
+      
+      const email = document.getElementById('email').value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) { document.getElementById('err-email').style.display = 'block'; isValid = false; }
+      else { document.getElementById('err-email').style.display = 'none'; }
+      
+      const subject = document.getElementById('subject').value.trim();
+      if (!subject) { document.getElementById('err-subject').style.display = 'block'; isValid = false; }
+      else { document.getElementById('err-subject').style.display = 'none'; }
+      
+      const message = document.getElementById('message').value.trim();
+      if (message.length < 10) { document.getElementById('err-message').style.display = 'block'; isValid = false; }
+      else { document.getElementById('err-message').style.display = 'none'; }
+      
+      if (isValid) {
+        document.getElementById('contact-form').style.display = 'none';
+        document.getElementById('success-msg').style.display = 'block';
+      }
+    });
+  </script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

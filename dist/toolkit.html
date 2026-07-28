@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYRIX | Cyber Toolkit</title>
+  <meta name="description" content="Free beginner-friendly cybersecurity tools to test and improve your online safety.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" crossorigin href="/assets/style-DUIa778m.css">
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div id="loader">
+    <div class="loader-shield"></div>
+    <div class="loader-text">CYRIX</div>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        CYRIX
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html" class="active">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <div class="controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="tk-hero">
+      <div class="tk-hero-grid" aria-hidden="true"></div>
+      <div class="tk-hero-content">
+        <div class="tk-hero-badge">8 Free Tools</div>
+        <h1>Cyber Toolkit</h1>
+        <p>Beginner-friendly cybersecurity tools to test, learn, and strengthen your online safety.</p>
+
+        <!-- Search bar -->
+        <div class="tk-search-wrap">
+          <span class="tk-search-icon" aria-hidden="true">&#128269;</span>
+          <input
+            type="search"
+            id="tk-search"
+            class="tk-search"
+            placeholder="Search tools…"
+            aria-label="Search toolkit"
+            autocomplete="off"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Tool Grid -->
+    <section class="section-container">
+      <div class="tk-grid" id="tk-grid">
+
+        <!-- Card 1 – Password Strength Checker -->
+        <article class="tk-card" data-tool="password-checker" data-tags="password strength checker">
+          <div class="tk-card-icon">&#128273;</div>
+          <h2 class="tk-card-title">Password Strength Checker</h2>
+          <p class="tk-card-desc">Analyse your password's strength against 5 security criteria and get suggestions to make it unbreakable.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="password-checker">Try Tool</button>
+        </article>
+
+        <!-- Card 2 – Phishing Email Detector -->
+        <article class="tk-card" data-tool="phishing-detector" data-tags="phishing email detector scan">
+          <div class="tk-card-icon">&#128231;</div>
+          <h2 class="tk-card-title">Phishing Email Detector</h2>
+          <p class="tk-card-desc">Paste a suspicious email or message and our analyser will detect common phishing red flags instantly.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="phishing-detector">Try Tool</button>
+        </article>
+
+        <!-- Card 3 – Malware Risk Checker -->
+        <article class="tk-card" data-tool="malware-risk" data-tags="malware risk behavior virus">
+          <div class="tk-card-icon">&#128030;</div>
+          <h2 class="tk-card-title">Malware Risk Checker</h2>
+          <p class="tk-card-desc">Select your online behaviours and discover your malware risk level with personalised safety recommendations.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="malware-risk">Try Tool</button>
+        </article>
+
+        <!-- Card 4 – Safe Internet Practices -->
+        <article class="tk-card" data-tool="safety-score" data-tags="internet safe practices score habits">
+          <div class="tk-card-icon">&#127759;</div>
+          <h2 class="tk-card-title">Internet Safety Score</h2>
+          <p class="tk-card-desc">Answer 5 quick questions about your online habits and receive a personalised Cyber Safety Score out of 100.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="safety-score">Try Tool</button>
+        </article>
+
+        <!-- Card 5 – Password Generator -->
+        <article class="tk-card" data-tool="pwd-generator" data-tags="password generator create secure">
+          <div class="tk-card-icon">&#9881;</div>
+          <h2 class="tk-card-title">Password Generator</h2>
+          <p class="tk-card-desc">Generate a cryptographically random password with full control over length, symbols, numbers, and case.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="pwd-generator">Try Tool</button>
+        </article>
+
+        <!-- Card 6 – URL Safety Checker -->
+        <article class="tk-card" data-tool="url-checker" data-tags="url link website safety checker">
+          <div class="tk-card-icon">&#128279;</div>
+          <h2 class="tk-card-title">URL Safety Checker</h2>
+          <p class="tk-card-desc">Enter any URL to check for HTTPS, suspicious domains, IP addresses, shortened links, and other red flags.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="url-checker">Try Tool</button>
+        </article>
+
+        <!-- Card 7 – Cybersecurity Tips Generator -->
+        <article class="tk-card" data-tool="tips-gen" data-tags="tips advice cybersecurity tips">
+          <div class="tk-card-icon">&#128161;</div>
+          <h2 class="tk-card-title">Cybersecurity Tips</h2>
+          <p class="tk-card-desc">Discover a random expert cybersecurity tip from our library of 50+ tips. Refresh for a new one any time.</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="tips-gen">Try Tool</button>
+        </article>
+
+        <!-- Card 8 – Data Breach Awareness -->
+        <article class="tk-card" data-tool="breach-check" data-tags="data breach email check awareness">
+          <div class="tk-card-icon">&#128274;</div>
+          <h2 class="tk-card-title">Data Breach Awareness</h2>
+          <p class="tk-card-desc">Learn whether your email may have appeared in known data breaches and what to do if it has (educational).</p>
+          <button class="btn btn-primary tk-try-btn" data-tool="breach-check">Try Tool</button>
+        </article>
+
+      </div>
+
+      <!-- No results message -->
+      <div id="tk-no-results" class="tk-no-results" style="display:none;">
+        <p>No tools match your search. Try a different keyword.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo-icon"></div>
+        CYRIX
+      </div>
+      <p>Empowering Digital Security Through Awareness</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <p class="footer-copy">© 2026 CYRIX.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ── MODAL OVERLAY ─────────────────────────────────────── -->
+  <div id="tk-modal-overlay" class="tk-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="tk-modal-title">
+    <div class="tk-modal" id="tk-modal">
+      <button class="tk-modal-close" id="tk-modal-close" aria-label="Close tool">&times;</button>
+      <h2 id="tk-modal-title" class="tk-modal-title"></h2>
+      <div id="tk-modal-body" class="tk-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/js/progress.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/toolkit.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

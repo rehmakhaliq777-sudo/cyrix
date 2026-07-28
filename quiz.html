@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYRIX | Quiz</title>
+  <meta name="description" content="Test your cybersecurity knowledge.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-shield"></div>
+    <div class="loader-text">CYRIX</div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        CYRIX
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html" class="active">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <div class="controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero" style="padding: 3rem 2rem;">
+      <h1>Cyber Quiz</h1>
+      <p>Put your knowledge to the test!</p>
+    </section>
+
+    <section class="section-container fade-in-section">
+      <div class="quiz-container" id="quiz-container">
+        
+        <div class="quiz-progress">
+          <div class="quiz-bar" id="quiz-bar"></div>
+        </div>
+        
+        <div class="quiz-header">
+          <span id="question-counter">Question 1 of 10</span>
+        </div>
+        
+        <div class="question-text" id="question-text">
+          <!-- Question text -->
+        </div>
+        
+        <div class="options-grid" id="options-grid">
+          <!-- Options -->
+        </div>
+        
+        <div class="quiz-footer">
+          <button class="btn btn-primary btn-next" id="btn-next" disabled>Next</button>
+        </div>
+        
+      </div>
+
+      <div class="quiz-container" id="quiz-results">
+
+        <!-- Circular progress + badge -->
+        <div class="results-header">
+          <h2>Quiz Complete!</h2>
+          <div class="circle-progress" id="circle-progress">
+            <div class="circle-inner">
+              <span id="circle-pct">0%</span>
+            </div>
+          </div>
+          <div id="performance-badge" class="badge"></div>
+          <p id="performance-msg" class="performance-msg"></p>
+        </div>
+
+        <!-- Stats row -->
+        <div class="results-stats">
+          <div class="stat-box">
+            <div class="stat-num">10</div>
+            <div class="stat-label">Total Questions</div>
+          </div>
+          <div class="stat-box stat-correct">
+            <div class="stat-num" id="stat-correct">0</div>
+            <div class="stat-label">Correct</div>
+          </div>
+          <div class="stat-box stat-wrong">
+            <div class="stat-num" id="stat-wrong">0</div>
+            <div class="stat-label">Wrong</div>
+          </div>
+          <div class="stat-box stat-pct">
+            <div class="stat-num" id="stat-pct">0%</div>
+            <div class="stat-label">Score</div>
+          </div>
+        </div>
+
+        <!-- Answer Review -->
+        <div class="review-section">
+          <h3 class="review-title">Answer Review</h3>
+          <div id="review-list"></div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="results-buttons">
+          <button class="btn btn-primary" id="btn-restart">Retake Quiz</button>
+          <a href="/" class="btn btn-outline">Back to Home</a>
+          <a href="/password.html" class="btn btn-outline">Review Lessons</a>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo-icon"></div>
+        CYRIX
+      </div>
+      <p>Empowering Digital Security Through Awareness</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <p class="footer-copy">© 2026 CYRIX.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="/js/progress.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/quiz.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

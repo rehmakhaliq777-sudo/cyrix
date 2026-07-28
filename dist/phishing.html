@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYRIX | Phishing Awareness</title>
+  <meta name="description" content="Learn how to spot fake emails and websites.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" crossorigin href="/assets/style-DUIa778m.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-shield"></div>
+    <div class="loader-text">CYRIX</div>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"></div>
+        CYRIX
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html" class="active">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <div class="controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <h1>Phishing Awareness</h1>
+      <p>Phishing is when attackers try to trick you into revealing sensitive information by pretending to be a trustworthy entity. Learn to spot the red flags.</p>
+    </section>
+
+    <section class="section-container fade-in-section">
+      <h2 class="section-title">Common Red Flags</h2>
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-icon">⚠</div>
+          <h3>Suspicious Sender</h3>
+          <p>Check the email address carefully. It might look similar to a real one, but have slight misspellings.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">!</div>
+          <h3>Urgent Language</h3>
+          <p>Attackers create a false sense of urgency to make you panic and click without thinking.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✗</div>
+          <h3>Bad Grammar</h3>
+          <p>Professional organizations rarely send emails with obvious spelling or grammar mistakes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⎋</div>
+          <h3>Suspicious Links</h3>
+          <p>Hover over links without clicking to see the actual URL. If it doesn't match the company, don't click.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container fade-in-section">
+      <h2 class="section-title">Phishing Email Game</h2>
+      <p style="text-align: center; margin-bottom: 3rem; color: var(--text-muted);">Read the emails below and decide if they are Safe or Phishing.</p>
+      
+      <div id="email-container" style="max-width: 800px; margin: 0 auto;">
+        <!-- Emails injected by JS -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo-icon"></div>
+        CYRIX
+      </div>
+      <p>Empowering Digital Security Through Awareness</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/password.html">Password Security</a>
+        <a href="/phishing.html">Phishing</a>
+        <a href="/malware.html">Malware</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/toolkit.html">Toolkit</a>
+        <a href="/encryption.html">Encryption</a>
+        
+      </div>
+      <p class="footer-copy">© 2026 CYRIX.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="/js/progress.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/phishing.js"></script>
+  <script>document.addEventListener('DOMContentLoaded',function(){if(window.CyberProgress)window.CyberProgress.visitLesson('phishing');});</script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
