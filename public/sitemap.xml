@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/password</loc>
+  </url>
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/phishing</loc>
+  </url>
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/malware</loc>
+  </url>
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/quiz</loc>
+  </url>
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/toolkit</loc>
+  </url>
+
+  <url>
+    <loc>https://cyrixacademy.vercel.app/encryption</loc>
+  </url>
+
+</urlset>
